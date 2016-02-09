@@ -1,0 +1,195 @@
+/*@font*/
+/*and now im lear*/
+
+@font-face{ 
+	font-family: 'Dimon';
+	src: url('../fonts/regular/ClearSans-Regular-webfont.eot');
+	src: url('../fonts/regular/ClearSans-Regular-webfont.eot?iefix') format('eot'),
+	     url('../fonts/regular/ClearSans-Regular-webfont.woff') format('woff'),
+	     url('../fonts/regular/ClearSans-Regular-webfont.ttf') format('truetype'),
+	     url('../fonts/regular/ClearSans-Regular-webfont.svg#webfont') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+@font-face{ 
+	font-family: 'Dimon';
+	src: url('../fonts/italic/ClearSans-Italic-webfont.eot');
+	src: url('../fonts/italic/ClearSans-Italic-webfont.eot?iefix') format('eot'),
+	     url('../fonts/italic/ClearSans-Italic-webfont.woff') format('woff'),
+	     url('../fonts/italic/ClearSans-Italic-webfont.ttf') format('truetype'),
+	     url('../fonts/italic/ClearSans-Italic-webfont.svg#webfont') format('svg');
+font-weight: normal;
+font-style: italic;
+}
+@font-face{ 
+	font-family: 'Dimon';
+	src: url('../fonts/bold/ClearSans-Bold-webfont.eot');
+	src: url('../fonts/bold/ClearSans-Bold-webfont.eot?iefix') format('eot'),
+	     url('../fonts/bold/ClearSans-Bold-webfont.woff') format('woff'),
+	     url('../fonts/bold/ClearSans-Bold-webfont.ttf') format('truetype'),
+	     url('../fonts/bold/ClearSans-Bold-webfont.svg#webfont') format('svg');
+font-weight: bold;
+font-style: normal;
+}
+@font-face{ 
+	font-family: 'Dimon';
+	src: url('../fonts/bolditalic/ClearSans-BoldItalic-webfont.eot');
+	src: url('../fonts/bolditalic/ClearSans-BoldItalic-webfont.eot?iefix') format('eot'),
+	     url('../fonts/bolditalic/ClearSans-BoldItalic-webfont.woff') format('woff'),
+	     url('../fonts/bolditalic/ClearSans-BoldItalic-webfont.ttf') format('truetype'),
+	     url('../fonts/bolditalic/ClearSans-BoldItalic-webfont.svg#webfont') format('svg');
+font-weight: bold;
+font-style: italic;
+}
+.dimon {
+	color: white;
+	font-family: Dimon;
+	font-size: 40px;
+	font-weight: bold;
+	font-style: italic;
+	text-shadow: -2px 4px 4px #999, 2px -4px 5px red;
+}
+
+
+body {
+
+	font: italic bold small-caps 14px/1.5 Verdana; 
+	/*font-style, font-weight, font-variant, font-size, 
+	/line-height, font-family*/
+	color: yellow;
+	text-indent: 25px;
+}
+
+h1 {
+	font-weight: 400;
+}
+
+p .bold { color: green !important;}
+.alive strong { 
+	color: black;
+	text-shadow: 3px 10px 1px red; 
+}
+
+
+
+
+video {
+	width: 600px;
+}
+
+img[src*="dd"] {
+	border: 2px solid red;
+}
+
+a[href^="data:"]:hover {
+	-ms-transform: rotate(5deg);
+	-webkit-transform: rotate(5deg);
+	transform: rotate(5deg);
+}
+
+a[href^="http://"]:hover {
+	text-decoration: none;
+}
+
+blockquote~ol li:nth-child(2n + 1) {
+	color: green;
+}
+li {
+	list-style-type: upper-latin;
+/*	list-style-position: inside;
+*/
+    margin-left: 30px;
+}
+ol li {
+	list-style-type: none;
+}
+ol li:before {
+	content: counter(item, square) " ";
+	color: red;
+	font-style: normal;
+}
+.size li {
+	color: black !important;
+	font-size: 1.2rem;
+	font-family: "Lucida Console", Monaco, monospace;
+	line-height: 1.5;
+}
+ul li:hover {
+	background: red;
+}
+p {
+	color: rgba(150, 20, 255, .9); 
+}
+body > p:before {
+	content: "Go-Go ";
+}
+
+::-moz-selection {
+	color: green;
+	background: black;
+}
+::selection; {
+	color: green;
+	background: black;
+}
+
+input:focus {
+	background-color: green;
+	font-style: italic;
+	border: 0;
+	color: white;
+}
+
+
+section p:nth-child(2) {
+	color: blue;
+}
+section p:nth-of-type(n + 3) {
+	color: green;
+}
+
+.try {
+	background: hsla( 3, 60%, 50%, 0.6); 
+	position: fixed;
+    top: 0;
+    left: 0;
+	width: 100%;
+	height: 30px;
+	color: rgba(225,225,22,0.1);
+}
+
+.pad {
+	padding-top: 10%;
+	width: 30%;
+}
+
+
+
+.transform {
+	text-transform: capitalize;
+	text-decoration: line-through overline underline;
+	color: red;
+}
+div {color: red;}
+.variant1 {
+	font-variant: small-caps;
+	letter-spacing: 2px;
+}
+.variant2 {
+	word-spacing: 2px;
+}
+.variant3 {
+	line-height: 30px;
+	text-shadow: 0px 2px 2px #666;
+}
+
+#logo {
+	font-size: 100px;
+	padding: 30px;
+	text-shadow: 0px 0px 5px #fff, 0px 0px 10px #fff,
+	 0px 0px 15px #fff, 0px 0px 30px #5d5f
+}
+p:first-letter {
+	font: italic bold 30px Verdana;
+	text-transform: uppercase;
+}
